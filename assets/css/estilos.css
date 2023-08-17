@@ -39,11 +39,7 @@ footer {
 
 
 /* Start Media Queries */
-@media screen and (max-width: 1295px) {
-  body {
-    padding: 0px 100px;
-  }
-}
+
 
 @media screen and (max-width: 1095px) {
   main .geometric-shapes {
@@ -52,19 +48,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 1015px) {
-  body {
-    padding: 0px 8%;
-  }
-}
 
 @media screen and (max-width: 650px) {
   header h1 {
     font-size: 2.4em;
-  }
-
-  body {
-    padding: 0px 4%;
   }
 }
 

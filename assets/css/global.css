@@ -1,0 +1,53 @@
+/* Start Global */
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-background: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  background: var(--color-background);
+  padding: 0px 200px;
+  display:flex;
+  flex-direction: column;
+}
+
+span, strong {
+  color: var(--color-white);
+  font-weight: 600;
+  background: var(--color-black);
+}
+
+/* End Global */
+
+
+/* Start Header */
+header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+header h1 {
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+  text-align: start;
+  margin-bottom: 50px;
+  line-height: 1.4em;
+}
+
+header p:last-child {
+  margin-bottom: 0;
+}
+/* End Header */

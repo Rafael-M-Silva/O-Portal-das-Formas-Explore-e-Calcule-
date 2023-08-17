@@ -20,6 +20,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  flex: 1;
+}
+
 span, strong {
   color: var(--color-white);
   font-weight: 600;
@@ -50,4 +54,33 @@ header p {
 header p:last-child {
   margin-bottom: 0;
 }
+
 /* End Header */
+
+
+/* Start Footer */
+footer {
+  padding: 20px 0px;
+  text-align: center;
+}
+/* End Footer */
+
+
+
+@media screen and (max-width: 1295px) {
+  body {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  body {
+    padding: 0px 8%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    padding: 0px 4%;
+  }
+}

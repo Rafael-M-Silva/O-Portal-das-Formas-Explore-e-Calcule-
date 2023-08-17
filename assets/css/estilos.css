@@ -1,0 +1,76 @@
+/* Start Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+main .geometric-shapes {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+main .geometric-shapes .shape img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  transition: .3s;
+  filter: drop-shadow(var(--color-black) -10px 10px 5px);
+  
+}
+
+main .geometric-shapes .shape img:hover {
+  filter: drop-shadow(var(--color-black) 0px 0px 0px);
+  transform: translate(-10px);
+}
+/* End Main */
+
+
+/* Start Footer */
+footer {
+  padding: 20px 0px;
+  text-align: center;
+}
+/* End Footer */
+
+
+/* Start Media Queries */
+@media screen and (max-width: 1295px) {
+  body {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  main .geometric-shapes {
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  body {
+    padding: 0px 8%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header h1 {
+    font-size: 2.4em;
+  }
+
+  body {
+    padding: 0px 4%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  main .geometric-shapes {
+    flex-direction: column;
+  }
+}
+/* End Media Queries */

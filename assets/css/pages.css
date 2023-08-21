@@ -61,7 +61,7 @@ main form .btn {
   justify-content: center;
 }
 
-main form .btn #btn {
+main form .btn .btn-form {
   cursor: pointer;
   box-shadow: #000 -5px 5px 0px;
   font-weight: 600;
@@ -70,9 +70,26 @@ main form .btn #btn {
   transition: .3s;
 }
 
-main form .btn #btn:hover {
+main form .btn .disabled {
+  background: #c9c9c9;
+  opacity: .5;
+  box-shadow: #000 0px 0px 0px;
+  cursor: auto;
+  transform: translate(0);
+}
+
+main form .btn .btn-form:hover {
   box-shadow: 0 0 0;
-  transform: translate(-5px);
+  transform: translateY(5px);
+}
+
+main form .btn .disabled:hover {
+  transform: translateY(0);
+}
+
+main .res {
+  margin: 50px 0;
+  font-size: 1.3em; 
 }
 /* End Main */
 

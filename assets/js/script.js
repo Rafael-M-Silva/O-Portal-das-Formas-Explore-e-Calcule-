@@ -20,7 +20,7 @@ const resetInput = () => {
   btn.classList.add('disabled')
 }
 
-const btnActivated = (e) => {
+const btnActivated = () => {
   if(base.value >= 1 && altura.value >= 1){
     btn.removeAttribute('disabled', '')
     btn.classList.remove('disabled')

@@ -8,7 +8,7 @@ const calculate = (e) => {
   let res = document.querySelector('.res h3')
   let calc = base.value * altura.value
 
-  res.innerHTML = `A área do <span>Retângulo</span> é: ${calc}m²`
+  res.innerHTML = `A área do <span>Retângulo</span> é: ${calc.toFixed(2)}m²`
   resetInput()
 }
 
@@ -21,7 +21,7 @@ const resetInput = () => {
 }
 
 const btnActivated = () => {
-  if(base.value >= 1 && altura.value >= 1){
+  if(base.value > 0 && altura.value > 0){
     btn.removeAttribute('disabled', '')
     btn.classList.remove('disabled')
     return

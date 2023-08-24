@@ -6,14 +6,15 @@ const btn = document.querySelector('.btn-form')
 const calculate = (e) => {
   e.preventDefault()
 
+
   let res = document.querySelector('.res h3')
   let PI = Math.PI
   let calc = PI * (Math.pow(raioMaior.value , 2) - Math.pow(raioMenor.value , 2))
 
-  if(raioMaior.value == raioMenor.value) {
+  if(parseInt(raioMaior.value) == parseInt(raioMenor.value)) {
     res.innerHTML = 'Os números são iguais, então não há possibilidade de encontrar diferenças!'
-  }else if(raioMaior.value < raioMenor.value){
-    res.innerHTML = `Você inseriu um número maior no raio menor!`
+  }else if(parseInt(raioMaior.value) < parseInt(raioMenor.value)){
+    res.innerHTML = 'Você inseriu um número <span>maior</span> no raio menor!'
   }else {
     res.innerHTML = `A área da <span>coroa circular</span> é: ${calc.toFixed(2).replace('.', ',')}m²`
   }

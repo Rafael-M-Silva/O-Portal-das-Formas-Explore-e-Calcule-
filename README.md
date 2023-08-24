@@ -1,2 +1,2 @@
-# O-Portal-das-Formas-Explore-e-Calcule
+# O Portal das Formas Explore e Calcule
 <img src="./github/indexpaginainicial.JPG">

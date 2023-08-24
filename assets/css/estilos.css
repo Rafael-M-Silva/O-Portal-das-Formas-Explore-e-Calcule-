@@ -19,7 +19,7 @@ main .geometric-shapes .shape {
 }
 
 main .geometric-shapes .shape .name-shape { 
-  background: var(--color-black);
+  background: #000;
   color: #fff;
   padding: 12px;
   border-radius: 5px 5px 5px 0;
@@ -71,12 +71,6 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 650px) {
-  header h1 {
-    font-size: 2.4em;
-  }
-}
 
 @media screen and (max-width: 585px) {
   main .geometric-shapes {

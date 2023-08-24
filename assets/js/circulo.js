@@ -5,7 +5,7 @@ const calculateCircle = (e) => {
   e.preventDefault()
 
   let pi = Math.PI
-  let calcArea = pi * (raio.value * raio.value)
+  let calcArea = pi * Math.pow(raio.value, 2)
   let res = document.querySelector('.res h3')
 
   res.innerHTML = `A área do <span>Círculo</span> é: ${calcArea.toFixed(2).replace('.', ',')}m²`

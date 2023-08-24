@@ -8,15 +8,15 @@ const calculate = (e) => {
 
   let res = document.querySelector('.res h3')
   let PI = Math.PI
-  let calc = PI * ((raioMaior.value * raioMaior.value) - (raioMenor.value * raioMenor.value))
+  let calc = PI * (Math.pow(raioMaior.value , 2) - Math.pow(raioMenor.value , 2))
 
   if(raioMaior.value == raioMenor.value) {
-    res.innerHTML = 'Os numeros são iguais, então não há posibilidade de tirar a diferença!'
-    resetInput()
-    return
+    res.innerHTML = 'Os números são iguais, então não há possibilidade de encontrar diferenças!'
+  }else if(raioMaior.value < raioMenor.value){
+    res.innerHTML = `Você inseriu um número maior no raio menor!`
+  }else {
+    res.innerHTML = `A área da <span>coroa circular</span> é: ${calc.toFixed(2).replace('.', ',')}m²`
   }
-
-  res.innerHTML = `A área da <span>coroa circular</span> é: ${calc.toFixed(2).replace('.', ',')}m²`
 
   resetInput()
 }

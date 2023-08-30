@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Portal das Formas | Hexágono Regular</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="./assets/js/hexagon.js"></script>
 </head>
+
 <body>
   <header>
     <div class="title">
       <h1>forma geométrica <span>Hexágono Regular</span>!</h1>
-      
+
     </div>
-    <a href="./index.html">Voltar</a>
+    <a href="./index.html"><i class="fa-solid fa-rotate-left"></i></a>
   </header>
 
   <main>
     <p>Como a área de um triângulo equilátero é de A = l²√3/4, logo a área de um hexágono regular é de A = 6l²√3/4.</p>
     <form>
-     <div class="form">
-      <label>
-        Lado Hexágono
-        <input type="number" id="tamanho">
-      </label>
+      <div class="form">
+        <label>
+          Lado Hexágono
+          <input type="number" id="tamanho">
+        </label>
 
-     </div>
+      </div>
 
-     <div class="btn">
-      <input class="btn-form disabled" type="button" value="Calcular" disabled>
-    </div>
+      <div class="btn">
+        <input class="btn-form disabled" type="button" value="Calcular" disabled>
+      </div>
     </form>
 
     <div class="res">
@@ -45,4 +49,5 @@
     <p>Desenvolvido por <strong>Rafael Mauricio</strong> Copyright &copy;</p>
   </footer>
 </body>
+
 </html>

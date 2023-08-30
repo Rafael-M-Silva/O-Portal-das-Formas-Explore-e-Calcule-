@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Portal das Formas | Tronco da pirâmide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="./assets/js/piramide.js"></script>
 </head>
+
 <body>
   <header>
     <div class="title">
       <h1>forma geométrica <span>Tronco de pirâmide</span>!</h1>
-      
+
     </div>
-    <a href="./index.html">Voltar</a>
+    <a href="./index.html"><i class="fa-solid fa-rotate-left"></i></a>
   </header>
 
   <main>
-    <p>Da mesma forma que há uma fórmula para o volume, também há uma fórmula para calcular a área do tronco de uma pirâmide, sendo A = A1 + A2 + Al, onde: A – área do tronco; A1 – área da base maior do tronco; A2 – área da base menor do tronco.</p>
+    <p>Da mesma forma que há uma fórmula para o volume, também há uma fórmula para calcular a área do tronco de uma
+      pirâmide, sendo A = A1 + A2 + Al, onde: A – área do tronco; A1 – área da base maior do tronco; A2 – área da base
+      menor do tronco.</p>
     <form>
-     <div class="form">
-      <label>
-        Área da base menor
-        <input type="number" id="area-base-menor" placeholder="Ab">
-      </label>
+      <div class="form">
+        <label>
+          Área da base menor
+          <input type="number" id="area-base-menor" placeholder="Ab">
+        </label>
 
-      <label>
-        Área da base maior
-        <input type="number" id="area-base-maior" placeholder="AB">
-      </label>
+        <label>
+          Área da base maior
+          <input type="number" id="area-base-maior" placeholder="AB">
+        </label>
 
-     <!--  <label>
-        Área lateral
-        <input type="number" id="area-lateral" placeholder="Al">
-      </label> -->
-     </div>
+        <label>
+          Altura do tronco
+          <input type="number" id="altura-tronco" placeholder="AT">
+        </label>
 
-     <div class="btn">
-      <input class="btn-form disabled" type="button" value="Calcular" disabled>
-    </div>
+      </div>
+
+      <div class="btn">
+        <input class="btn-form " type="button" value="Calcular">
+      </div>
     </form>
 
     <div class="res">
@@ -54,4 +61,5 @@
     <p>Desenvolvido por <strong>Rafael Mauricio</strong> Copyright &copy;</p>
   </footer>
 </body>
+
 </html>

@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Portal das Formas | Circulo</title>
+  <title>O Portal das Formas | Coroa do Círculo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/pages.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script defer src="./assets/js/circulo.js"></script>
+  <script defer src="./assets/js/coroa.js"></script>
 </head>
 <body>
   <header>
     <div class="title">
-      <h1>forma geométrica <span>circulo</span>!</h1>
+      <h1>forma geométrica <span>Setor Circular em um Círculo Aninhado</span>!</h1>
+      
     </div>
     <a href="./index.html"><i class="fa-solid fa-rotate-left"></i></a>
   </header>
 
   <main>
-    <p>A área de um círculo é pi vezes o raio elevado ao quadrado (A = π r²). Aprenda a usar esta fórmula para calcular a área de um círculo, quando souber a medida do diâmetro.</p>
+    <p>O lado do quadrado mede L e o raio r da circunferência inscrita é a metade do lado, isto é r=L/2. O raio da circunferência circunscrita é a metade da diagonal do quadrado de lado L. Como r2=2(L/2)2=12L2, então r=12L√2</p>
     <form>
      <div class="form">
       <label>
-        Raio
-        <input type="number" id="raio" placeholder="Raio">
+        Raio Maior
+        <input type="number" id="raio-maior" placeholder="Raio">
       </label>
 
+
       <label>
-        PI
-        <input type="text" id="pi" value="3,14" disabled>
+        Raio Menor
+        <input type="number" id="raio-menor" placeholder="Raio">
       </label>
      </div>
 
@@ -43,13 +45,10 @@
     <div class="res">
       <h3></h3>
     </div>
-    
-
   </main>
 
   <footer>
     <p>Desenvolvido por <strong>Rafael Mauricio</strong> Copyright &copy;</p>
   </footer>
-
 </body>
 </html>

@@ -9,6 +9,7 @@ main {
 
 main .geometric-shapes {
   width: 100%;
+  flex-wrap: wrap;
   display: flex;
   gap: 20px;
   justify-content: center;

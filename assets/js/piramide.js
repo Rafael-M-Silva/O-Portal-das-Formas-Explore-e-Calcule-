@@ -1,25 +1,24 @@
 let areaBaseMenor = document.querySelector('#area-base-menor')
 let areaBaseMaior = document.querySelector('#area-base-maior')
+let alturaTronco = document.querySelector('#altura-tronco')
 
 const btn = document.querySelector('.btn-form')
 
 const calculate = (e) => {
-  e.preventDefault()
+e.preventDefault()
 
-  /* https://www.youtube.com/watch?v=yblOIPtFONc */
+let arestaBaseMenor = Number(areaBaseMenor.value)
+let arestaBaseMaior = Number(areaBaseMaior.value)
+let apotemaBaseMenor = arestaBaseMenor / 2
+let apotemaBaseMaior = arestaBaseMaior / 2
 
-  let arestaBaseMenor = null
-  let arestaBaseMaior = null 
-  let arestaLateral = null 
-  let apotemaTronco = null 
-  let apotemaBaseMenor = null 
-  let apotemaBaseMaior = null
+let alturaT = alturaTronco.value
+let apotemaTronco = Math.pow(alturaT, 2) + Math.pow(apotemaBaseMaior - apotemaBaseMenor, 2);
+let arestaLateral = (((arestaBaseMaior + arestaBaseMenor) * Math.sqrt(apotemaTronco)) / 2) * 4
 
-  let alturaTronco = null
+let res = document.querySelector('.res h3')
 
-  let res = document.querySelector('.res h3')
-
-  res.innerHTML = `A área do <span>Tronco de pirâmide</span> é: √³`
+res.innerHTML = `A área do <span>Tronco de pirâmide</span> é: ${arestaLateral.toFixed(2)}m²`
 
 resetInput()
 }
@@ -27,13 +26,14 @@ resetInput()
 const resetInput = () => {
   areaBaseMenor.value = ''
   areaBaseMaior.value = ''
+  alturaTronco.value = ''
 
   btn.setAttribute('disabled', '')
   btn.classList.add('disabled')
 }
 
 const btnActivated = () => {
-  if(areaBaseMaior.value > 0 && areaBaseMenor.value) {
+  if(areaBaseMaior.value > 0 && areaBaseMenor.value && alturaTronco.value > 0) {
     btn.classList.remove('disabled')
     btn.removeAttribute('disabled', '')
     return
@@ -43,6 +43,7 @@ const btnActivated = () => {
   btn.setAttribute('disabled', '')
 }
 
+alturaTronco.addEventListener('input', btnActivated)
 areaBaseMaior.addEventListener('input', btnActivated)
 areaBaseMenor.addEventListener('input', btnActivated)
 btn.addEventListener('click', calculate)

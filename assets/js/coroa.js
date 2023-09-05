@@ -26,8 +26,7 @@ const resetInput = () => {
   raioMaior.value = ''
   raioMenor.value = ''
 
-  btn.setAttribute('disabled', '')
-  btn.classList.add('disabled')
+  btnActivated()
 }
 
 const btnActivated = () => {

@@ -16,8 +16,7 @@ const resetInput = () => {
   base.value = ''
   altura.value = ''
 
-  btn.setAttribute('disabled', '')
-  btn.classList.add('disabled')
+  btnActivated()
 }
 
 const btnActivated = () => {

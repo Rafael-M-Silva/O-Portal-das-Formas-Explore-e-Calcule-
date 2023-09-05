@@ -28,8 +28,7 @@ const resetInput = () => {
   areaBaseMaior.value = ''
   alturaTronco.value = ''
 
-  btn.setAttribute('disabled', '')
-  btn.classList.add('disabled')
+  btnActivated()
 }
 
 const btnActivated = () => {

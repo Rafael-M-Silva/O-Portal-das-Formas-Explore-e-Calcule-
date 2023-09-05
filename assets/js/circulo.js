@@ -14,8 +14,7 @@ const calculateCircle = (e) => {
 
 const resetInput = () => {
   raio.value = ''
-  btn.classList.add('disabled')
-  btn.setAttribute('disabled', '')
+  btnActivated()
 }
 
 const btnActivated = (e) => {

@@ -16,8 +16,7 @@ const calculate = (e) => {
 
 const resetInput = () => {
   lenghtInput.value = ''
-  btn.classList.add('disabled')
-  btn.setAttribute('disabled', '')
+  btnActivated()
 }
 
 const btnActivated = (e) => {
